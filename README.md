@@ -1,4 +1,4 @@
-# web development assignment. Login part( this is a copy of a site to have courses to prepare for a Canadian language exam)
+# web development assignment. Tarifs part( this is a copy of a site to have courses to prepare for a Canadian language exam)
 
 ## Table of contents
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [tcf canada tarifs]()
+- Live Site URL: [tcf canada tarifs](https://tpweb-tarifs.vercel.app/)
 
 ## My process
 

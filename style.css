@@ -176,6 +176,7 @@ nav a i{
 }
 .tarifs-abonnements{
     width: 80%;
+    max-width: 80%;
     margin: 43px auto;
 }
 .presentation-tarifs{
