@@ -322,19 +322,6 @@ nav a i{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***********************footer**************************/
 footer{
     margin-top: 55px;
@@ -343,6 +330,7 @@ footer{
 }
 .footer-first{
    background: linear-gradient(to bottom,rgb(21,95,242),rgb(41,108,242));
+   padding: 10px 0;
 }
 
 .contain{
@@ -354,12 +342,18 @@ footer{
     padding-top: 25px;
 }
 .pages{
-    width: 400px;
-    margin-right: 20px;
+    width: 300px;
+    margin-right: 30px;
+}
+.pages a{
+    font-size: 15px;
 }
 .compte{
-    width: 500px;
-    margin-right: 25px;
+    width: 350px;
+    margin-right: 35px;
+}
+.compte h3, .social2 h3,.propos h3{
+    font-size: 20px;
 }
 .parametre{
     background-color: rgb(19,94,242);
@@ -396,6 +390,7 @@ footer{
 }
 .suite{
     width: 90%;
+    font-size: 15px;
 }
 .options a:last-child,.suite a:last-child{
     border-bottom: none;
@@ -431,29 +426,48 @@ footer h3{
     display: flex;
     flex-direction: column;
 }
-.paiements a{
+.paiements .clique{
     color: black;
     background-color: white;
-    width: 85%;
+    width: 100%;
     margin: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
     padding: 10px 0px;
+    transition: 0.3s ease-in;
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    transition: 0.3s ease-in;
 }
-.paiements a:hover{
+.paiements .clique:hover{
     transform: scale(0.9);
 }
-
-
+.accepter{
+    width: 280px;
+    margin-bottom: 10px;
+}
+.mode-paiements-footer-first{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 310px;
+    height: 290px;
+}
+.mode-paiements-footer-first div{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.mode-paiements-footer-first img{
+    width: 120px;
+    margin: 5px;
+}
 .footer-second{
     display: flex;
     color: rgba(0, 0, 0, 0.623);
     align-items: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     font-size: 11px;
     justify-content: space-between;
     width: 90%;
