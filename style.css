@@ -102,7 +102,7 @@ nav a i{
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: 0.1s ease;
+    transition: 0.2s ease-in;
 }
 .navigation .visible-a:hover{
     color: rgb(19, 94, 242);
@@ -203,14 +203,16 @@ nav a i{
 }
 .card-tarifs-abonnements{
     display: flex;
-    /* gap: 20px; */
-    margin-top: 40px;
-    justify-content: space-around;
+    gap: 20px;
+    width: 1110px;
+    max-width: 95%;
+    justify-content: center;
+    margin: 40px auto 0px;
 }
 .bronze,.silver,.gold{
     border: 1px solid rgb(48,113,242);
     border-radius: 10px;
-    width: 340px;
+    width: 350px;
     box-shadow: 2px 5px 8px 3px rgb(187,187,187);
     transition: 0.3s ease;
 }
@@ -231,7 +233,7 @@ nav a i{
 .bande{
     position: absolute;
     transform: rotate(45deg);
-    clip-path: polygon(17.5% 0, 82.8% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(17.8% 0, 82.5% 0, 100% 100%, 0% 100%);
     width: 147px;
     font-size: 13px;
     right: -30px;
