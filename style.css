@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    max-width: 1230px;
 }
 h1{
     font-size: 16px;
@@ -55,6 +55,24 @@ nav a i{
     padding: 0;
     font-size: 15px;
 }
+@media (min-width: 344px) and (max-width:768px){
+    .header-first h1,.header-first .responsive-tel{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .social a:first-child{
+        border-left: none;
+    }
+}
 /****head second*******************************************/
 .container-header-second{
     position: sticky;
@@ -68,7 +86,7 @@ nav a i{
     margin: auto;
     align-items: center;
     gap: 25px;
-    max-width: 90%;
+    max-width: 1230px;
     background-color: white;
     height: 94px;
 }
@@ -102,7 +120,7 @@ nav a i{
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease;
 }
 .navigation .visible-a:hover{
     color: rgb(19, 94, 242);
@@ -121,7 +139,7 @@ nav a i{
     height: 50px; /* Étendre verticalement sans modifier le design */
 }
 .deroulement:hover .toggle{
-    display: flex;
+    display: block;
 }
 .toggle{
     display: flex;
@@ -130,9 +148,10 @@ nav a i{
     box-shadow: 8px 8px 18px -15px #00000091;
     width: 350px;
     padding: 15px 30px;
+    gap: 10px;
     margin-top: 30px;
     background-color: white;
-    transition: ease 0.3s;
+    transition: ease-in 0.3s;
 }
 .toggle a{
     color: rgb(19, 94, 242);
@@ -147,6 +166,12 @@ nav a i{
 .toggle a:hover{
     color: rgb(141,195,242);
 }
+.deroulement::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px; /* Étendre verticalement sans modifier le design */
+}
 .deroulement:hover .visible-toggle{
     color: rgb(19, 94, 242);
 }
@@ -156,6 +181,56 @@ nav a i{
 .oral{
     display: none;
     width: 310px;
+}
+.responsive-menu-header .fa-bars{
+    display: none;
+}
+@media (min-width: 344px) and (max-width:768px){
+    .responsive-menu-header .fa-bars{
+        display: block;
+        color: rgb(41, 41, 41);
+    }
+    .navigation{
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: -25px;
+        top: 25px;
+        width: 220px;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        box-shadow: 8px 8px 18px -15px #00000091;
+
+    }
+    .deroulement::after {
+        height: 0px;
+    }
+    .toggle{
+        margin-top: 5px;
+        font-size: 15px;
+        width: 200px;
+        background-color: rgba(240, 240, 240, 0.774);
+        box-shadow: none;
+        position: relative;
+    }
+    .toggle a{
+        font-size: 15px;
+        width: 160px;
+        gap: 10px;
+    }
+    .header-second{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .header-second img{
+        width: 100px;
+        margin-left: 0;
+    }
+    .responsive-menu-header{
+        position: relative;
+    }
 }
 
 /*****************************main tarifs***********************************/
@@ -234,9 +309,9 @@ nav a i{
     position: absolute;
     transform: rotate(45deg);
     clip-path: polygon(17.8% 0, 82.5% 0, 100% 100%, 0% 100%);
-    width: 147px;
+    width: 147.5px;
     font-size: 13px;
-    right: -30px;
+    right: -29.5px;
     top: 30px;
     text-transform: uppercase;
     padding: 5px;
@@ -323,7 +398,26 @@ nav a i{
     font-weight: 600;
 }
 
-
+@media (min-width:344px) and (max-width:768px){
+    .card-tarifs-abonnements{
+        flex-wrap: wrap;
+        max-width: 90%;
+        /* margin: 80px auto 0px; */
+    }
+    .presentation-tarifs{
+        max-width: 90%;
+        margin: auto;
+        height: 110px;
+    }
+    .presentation-tarifs h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .presentation-tarifs h3{
+        font-size: 15px;
+        text-align: center;
+    }
+}
 /***********************footer**************************/
 footer{
     margin-top: 55px;
@@ -337,7 +431,7 @@ footer{
 
 .contain{
     width: 90%;
-    max-width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -474,8 +568,21 @@ footer h3{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    max-width: 1200px;
 }
 .footer-second a{
     color: #141414d7;
     font-weight: 600;
+}
+@media (min-width: 344px) and (max-width:768px){
+    .contain{
+        flex-wrap: wrap;
+        width: 98%;
+        margin: auto;
+        gap: 10px;
+    }
+    .footer-second{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
